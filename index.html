@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>Aspiradora Inteligente</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<section class="title-container">
+			<div class="wrapper">
+				<h1 class="text-center title">Aspiradora Inteligente</h1>
+			</div>
+		</section>
+		<section class="instructions-container">
+			<div class="wrapper">
+				Instrucciones:
+				<ol>
+					<li>Genere el área de limpieza.</li>
+					<li>Seleccione por dónde quiere comenzar a limpiar</li>
+					<li>Mover hasta que quede limpio.</li>
+				</ol>
+
+				<div class="instructions-button-container">
+					<input type="button" value="Generar el area de limpieza" id="btnMatriz" class="btn">
+					<input type="button" value="Mover aspiradora" id="btnMovimiento" class="btn">
+					<input type="button" value="Limpieza rápida" id="btnMovimientoAuto" class="btn">
+				</div>
+			</div>
+		</section>
+
+		<section class="matriz">
+			<div class="wrapper">
+				<table id="tab" class="table"></table>
+			</div>
+		</section>
+
+		<section class="trail-container">
+			<div class="wrapper">
+				<h3 class="title text-center">
+					Recorrido:
+				</h3>
+				<hr>
+				<div class="route-container">
+					<div class="route-item">
+						<h4>Ruta:</h4>
+						<ul id="lista"></ul>
+					</div>
+					<div class="route-item">
+						<h4>Cantidad de pasos:</h4>
+						<p id="cPasos"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
